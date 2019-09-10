@@ -36,6 +36,7 @@ class AmsterdamApi:
                 'name': trash_bin['_display'],
                 'type': trash_bin['waste_name'],
                 'address': trash_bin['address'],
+                'weight': trash_bin['container_type']['weight'],
             })
 
         return trash_bins
